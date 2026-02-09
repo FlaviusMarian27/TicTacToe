@@ -18,7 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26335747-c680-4b9b-9b68-b8606c7f7f0a" name="Changes" comment="" />
+    <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +36,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
 }]]></component>
-  <component name="ProjectId" id="39RmD9xLauQDyuoUQSunp8NHiVe" />
+  <component name="ProjectId" id="39Rn1RaN78x5IyRW81D1I803qA3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,7 +53,6 @@
     "cidr.known.project.marker": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/flavius/Documents/TicTacToe/main.cpp",
     "org.rust.first.attach.projects": "true",
     "to.speed.mode.migration.done": "true",
@@ -62,13 +61,16 @@
 }]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="26335747-c680-4b9b-9b68-b8606c7f7f0a" name="Changes" comment="" />
-      <created>1770667134517</created>
+      <changelist id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="" />
+      <created>1770667535258</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1770667134517</updated>
+      <updated>1770667535258</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
