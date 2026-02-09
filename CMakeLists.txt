@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.1)
-project(TicTacToe C)
+project(TicTacToe)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 26)
 
-add_executable(TicTacToe main.c)
+add_executable(TicTacToe main.cpp)
