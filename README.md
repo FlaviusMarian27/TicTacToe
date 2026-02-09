@@ -9,4 +9,4 @@ O implementare clasică a jocului **X și 0**, scrisă în C++ modern. Proiectul
 
 ### 🛠️ Tehnologii
 * C++
-* CMake" > README.md
+* CMake" > README.md 
