@@ -12,27 +12,19 @@ O implementare clasică a jocului **X și 0**, scrisă în C++ modern. Proiectul
 * CMake" > README.md
 
 ```text
-TicTacToe-Pro/
-├── CMakeLists.txt                # Creierul compilării (configurarea SFML)
-├── include/                      # Toate fișierele .hpp (interfețe)
-│   ├── Core/
-│   │   ├── Board.hpp             # Logica tablei (matricea jocului)
-│   │   ├── GameEngine.hpp        # Controller-ul (state machine-ul jocului)
-│   │   └── Constants.hpp         # Enum-uri (X, O, Empty) și setări de culori
-│   ├── Players/
-│   │   ├── Player.hpp            # Interfața de bază (clasă abstractă)
-│   │   ├── HumanPlayer.hpp       # Jucător controlat prin input (click)
-│   │   ├── AIPlayer.hpp          # AI Easy (Random) și Hard (Minimax)
-│   │   └── NetworkPlayer.hpp     # Jucător pentru multiplayer (socket-uri)
-│   └── Graphics/
-│       └── Renderer.hpp          # Randarea jocului folosind SFML
-├── src/                          # Implementările (.cpp)
-│   ├── Core/                     # Board.cpp, GameEngine.cpp
-│   ├── Players/                  # HumanPlayer, AIPlayer, NetworkPlayer
-│   ├── Graphics/                 # Renderer.cpp
-│   └── main.cpp                  # Punctul de start (inițializează jocul)
-├── assets/                       # Resurse externe
-│   ├── fonts/                    # Fonturi (.ttf) pentru UI, scor, meniu
-│   └── textures/                 # Texturi pentru fundal sau X/O (opțional)
-└── build/                        # Folder generat automat (executabilul)
+TicTacToe/
+├── include/              <-- Aici pui doar "CUPRINSUL" (ce funcții/clase avem)
+│   ├── Board.hpp         # Regulile: "X aici, O acolo, cine a câștigat?"
+│   ├── Renderer.hpp      # Desenul: "Cum desenez un cerc sau un X?"
+│   ├── Player.hpp        # Jucătorii: Interfața comună (Om sau Bot)
+│   └── GameEngine.hpp    # Șeful: Dirijează traficul între cele de mai sus
+│
+├── src/                  <-- Aici pui "POVESTEA" (codul propriu-zis)
+│   ├── Board.cpp
+│   ├── Renderer.cpp
+│   ├── Player.cpp
+│   ├── GameEngine.cpp
+│   └── main.cpp          # Butonul de ON: Doar 3 linii de cod care pornesc totul
+│
+└── CMakeLists.txt        # Rețeta: Îi spune lui CLion cum să asambleze totul
 ```
