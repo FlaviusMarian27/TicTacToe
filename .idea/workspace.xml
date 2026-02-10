@@ -27,7 +27,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TicTacToe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TicTacToe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
@@ -105,6 +104,11 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TicTacToe" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TicTacToe" TARGET_NAME="TicTacToe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TicTacToe" RUN_TARGET_NAME="TicTacToe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -120,12 +124,17 @@
       <updated>1770667535258</updated>
       <workItem from="1770667536304" duration="62000" />
       <workItem from="1770667740386" duration="23000" />
-      <workItem from="1770730851745" duration="994000" />
+      <workItem from="1770730851745" duration="4751000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
