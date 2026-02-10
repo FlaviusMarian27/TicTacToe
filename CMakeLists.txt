@@ -15,10 +15,10 @@ include_directories(include)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 add_executable(TicTacToe ${SOURCES}
-        main.cpp
         include/Core/Constants.hpp
         include/Core/Board.hpp
-        src/Core/Board.cpp)
+        src/Core/Board.cpp
+        src/main.cpp)
 
 # Linkuim bibliotecile SFML
 target_link_libraries(TicTacToe sfml-graphics sfml-window sfml-system sfml-network)

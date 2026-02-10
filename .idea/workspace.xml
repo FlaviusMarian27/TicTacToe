@@ -29,6 +29,7 @@
     <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Board.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +78,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake Application.TicTacToe.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
@@ -124,7 +126,7 @@
       <updated>1770667535258</updated>
       <workItem from="1770667536304" duration="62000" />
       <workItem from="1770667740386" duration="23000" />
-      <workItem from="1770730851745" duration="4751000" />
+      <workItem from="1770730851745" duration="5422000" />
     </task>
     <servers />
   </component>

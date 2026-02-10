@@ -49,7 +49,7 @@ Cell Board::checkWinner() const{
     if (m_grid[2][0] != Cell::Empty &&
         m_grid[2][0] == m_grid[1][2] &&
         m_grid[2][0] == m_grid[0][2]){
-        return m_grid[2][0];s
+        return m_grid[2][0];
     }
 
     return Cell::Empty;
