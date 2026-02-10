@@ -29,8 +29,8 @@
     <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Core/Constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Core/Constants.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Renderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,7 @@
       <updated>1770667535258</updated>
       <workItem from="1770667536304" duration="62000" />
       <workItem from="1770667740386" duration="23000" />
-      <workItem from="1770730851745" duration="6607000" />
+      <workItem from="1770730851745" duration="10257000" />
     </task>
     <servers />
   </component>
@@ -138,16 +138,5 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
