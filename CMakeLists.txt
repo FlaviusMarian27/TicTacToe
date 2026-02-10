@@ -18,7 +18,9 @@ add_executable(TicTacToe ${SOURCES}
         include/Core/Constants.hpp
         include/Core/Board.hpp
         src/Core/Board.cpp
-        src/main.cpp)
+        src/main.cpp
+        include/Graphics/Renderer.hpp
+        src/Graphics/Renderer.cpp)
 
 # Linkuim bibliotecile SFML
 target_link_libraries(TicTacToe sfml-graphics sfml-window sfml-system sfml-network)

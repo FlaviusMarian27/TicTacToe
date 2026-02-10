@@ -1,4 +1,7 @@
 #include "Core/Board.hpp"
+#include <iostream>
+
+using namespace std;
 
 Board::Board(){
     resetBoard();

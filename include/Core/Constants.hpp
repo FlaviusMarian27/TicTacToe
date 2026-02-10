@@ -9,4 +9,4 @@ enum class Cell{
 
 //dimensiunea pentru interfata
 const int WINDOW_SIZE = 600;
-const int CCELL_SIZE = WINDOW_SIZE / 3;
+const int CELL_SIZE = WINDOW_SIZE / 3;

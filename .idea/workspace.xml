@@ -29,6 +29,7 @@
     <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Core/Constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Core/Constants.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Board.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +127,7 @@
       <updated>1770667535258</updated>
       <workItem from="1770667536304" duration="62000" />
       <workItem from="1770667740386" duration="23000" />
-      <workItem from="1770730851745" duration="5422000" />
+      <workItem from="1770730851745" duration="6607000" />
     </task>
     <servers />
   </component>
