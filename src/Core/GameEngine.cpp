@@ -13,7 +13,7 @@ GameEngine::GameEngine()
 }
 
 void GameEngine::run(){
-    while(!m_isGameOver){
+    while(m_window.isOpen()){
         processEvents();
         update();
         render();
@@ -46,7 +46,7 @@ void GameEngine::update(){
         return;
     }
 
-    if (m_isPlayer1Turn == true && m_isGameOver == false){
+    if (m_isPlayer1Turn == false){
         auto bot = dynamic_cast<EasyBot*>(m_player2.get());
         if (bot){
             Move m = bot->getMoveFromBoard(m_board);
