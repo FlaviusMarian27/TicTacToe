@@ -28,7 +28,8 @@ add_executable(TicTacToe ${SOURCES}
         src/Players/EasyBot.cpp
         include/Core/GameEngine.hpp
         src/Core/GameEngine.cpp
-        include/Players/HardBot.hpp)
+        include/Players/HardBot.hpp
+        src/Players/HardBot.cpp)
 
 # Linkuim bibliotecile SFML
 target_link_libraries(TicTacToe sfml-graphics sfml-window sfml-system sfml-network)

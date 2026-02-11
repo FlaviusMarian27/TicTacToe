@@ -1,15 +1,15 @@
 #include "Core/GameEngine.hpp"
 #include "Players/HumanPlayer.hpp"
-#include "Players/EasyBot.hpp"
+#include "Players/HardBot.hpp"
 
 GameEngine::GameEngine()
-    : m_window(sf::VideoMode(WINDOW_SIZE,WINDOW_SIZE),"TicTacToe vs EasyBot"),
+    : m_window(sf::VideoMode(WINDOW_SIZE,WINDOW_SIZE),"TicTacToe vs HardBot"),
     m_board(),
     m_renderer(m_window),
     m_isPlayer1Turn(true),
     m_isGameOver(false){
     m_player1 = std::make_unique<HumanPlayer>(Cell::X, "You");
-    m_player2 = std::make_unique<EasyBot>(Cell::O, "Easy Bot");
+    m_player2 = std::make_unique<HardBot>(Cell::O, "Hard Bot");
 }
 
 void GameEngine::run(){
@@ -47,9 +47,9 @@ void GameEngine::update(){
     }
 
     if (m_isPlayer1Turn == false){
-        auto bot = dynamic_cast<EasyBot*>(m_player2.get());
+        auto bot = dynamic_cast<HardBot*>(m_player2.get());
         if (bot){
-            Move m = bot->getMoveFromBoard(m_board);
+            Move m = bot->getBestMove(m_board);
             m_board.makeMove(m.row,m.col,bot->getSymbol());
             m_isPlayer1Turn = true;
         }

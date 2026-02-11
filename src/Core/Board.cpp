@@ -50,7 +50,7 @@ Cell Board::checkWinner() const{
 
     //pentru diagonala secundara
     if (m_grid[2][0] != Cell::Empty &&
-        m_grid[2][0] == m_grid[1][2] &&
+        m_grid[2][0] == m_grid[1][1] &&
         m_grid[2][0] == m_grid[0][2]){
         return m_grid[2][0];
     }

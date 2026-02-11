@@ -28,8 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Core/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Core/Board.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameEngine.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <workItem from="1770667740386" duration="23000" />
       <workItem from="1770730851745" duration="11929000" />
       <workItem from="1770805304526" duration="6963000" />
-      <workItem from="1770822887911" duration="862000" />
+      <workItem from="1770822887911" duration="5545000" />
     </task>
     <servers />
   </component>
