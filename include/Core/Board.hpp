@@ -13,4 +13,5 @@ public:
     Cell checkWinner() const;
     bool isFull() const;
     Cell getCell(int row, int column) const;
+    void setCell(int row, int column, Cell cell);
 };

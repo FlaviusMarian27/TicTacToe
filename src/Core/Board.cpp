@@ -73,3 +73,9 @@ bool Board::isFull() const{
 Cell Board::getCell(int row, int column) const{
     return m_grid[row][column];
 }
+
+void Board::setCell(int row, int column, Cell piece){
+    if (row >= 0 && row < 3 && column >= 0 && column < 3){
+        m_grid[row][column] = piece;
+    }
+}
