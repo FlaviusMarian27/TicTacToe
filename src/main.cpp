@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp>
+/*#include <SFML/Graphics.hpp>
 #include "Core/Board.hpp"
 #include "Graphics/Renderer.hpp"
 #include <iostream>
@@ -37,5 +37,13 @@ int main(void){
         window.display();//1
     }
 
+    return 0;
+}*/
+
+#include "Core/GameEngine.hpp"
+
+int main() {
+    GameEngine game;
+    game.run();
     return 0;
 }

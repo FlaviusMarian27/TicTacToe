@@ -1,5 +1,6 @@
 #pragma once
 #include "Core/Board.hpp"
+#include <SFML/Graphics/RenderWindow.hpp>
 #include <string>
 
 //structura pentru stoca fiecare mutare
