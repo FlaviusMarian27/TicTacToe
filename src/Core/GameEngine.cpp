@@ -5,12 +5,12 @@
 #include "Players/HardBot.hpp"
 
 GameEngine::GameEngine()
-    : m_window(sf::VideoMode(WINDOW_SIZE, 750), "TicTacToe - Menu"),
+    : m_window(sf::VideoMode(WINDOW_SIZE, 750), "TicTacToe - Menu",sf::Style::Titlebar | sf::Style::Close),
       m_renderer(m_window),
       m_currentMode(GameMode::Menu),
       m_animationOffset(800.f), // incepem cu butoanele "sub" ecran
-      m_isGameOver(false),
-      m_isPlayer1Turn(true)
+      m_isPlayer1Turn(true),
+      m_isGameOver(false)
 {
     // 1. incarcare Font
     if (!m_font.loadFromFile("assets/fonts/font.ttf")) {
@@ -58,8 +58,19 @@ void GameEngine::processEvents() {
     sf::Vector2i mousePos = sf::Mouse::getPosition(m_window);
 
     while (m_window.pollEvent(event)) {
-        if (event.type == sf::Event::Closed)
+        if (event.type == sf::Event::Closed){
             m_window.close();
+        }
+
+        if (m_isGameOver && event.type == sf::Event::KeyPressed) {
+            if (event.key.code == sf::Keyboard::R) {
+                initGame(); // Reincepe meciul actual
+            }
+            if (event.key.code == sf::Keyboard::M) {
+                m_currentMode = GameMode::Menu;
+                m_animationOffset = 800.f; // Resetam animatia pentru meniu
+            }
+        }
 
         if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
             if (m_currentMode == GameMode::Menu) {
@@ -159,6 +170,47 @@ void GameEngine::render() {
     } else {
         m_renderer.drawGrid();
         m_renderer.drawMarkers(m_board);
+
+        if (m_isGameOver) {
+            // 1. Logica pentru Rezultat (MIJLOC)
+            sf::Text resultText;
+            resultText.setFont(m_font);
+            resultText.setCharacterSize(80);
+            resultText.setStyle(sf::Text::Bold);
+
+            Cell winner = m_board.checkWinner();
+            if (winner == Cell::X) {
+                resultText.setString("YOU WIN!");
+                resultText.setFillColor(sf::Color::Green);
+            } else if (winner == Cell::O) {
+                resultText.setString("YOU LOSE!");
+                resultText.setFillColor(sf::Color::Red);
+            } else {
+                resultText.setString("DRAW!");
+                resultText.setFillColor(sf::Color::Yellow);
+            }
+
+            // Centrare Rezultat (in centrul tablei, approx y=300)
+            sf::FloatRect resRect = resultText.getLocalBounds();
+            resultText.setOrigin(resRect.left + resRect.width / 2.0f, resRect.top + resRect.height / 2.0f);
+            resultText.setPosition(300.f, 300.f);
+
+            // 2. Logica pentru Instructiuni (JOS)
+            sf::Text hintText;
+            hintText.setFont(m_font);
+            hintText.setString("Press R: Rematch | Press M: Menu");
+            hintText.setCharacterSize(30);
+            hintText.setFillColor(sf::Color(200, 200, 200)); // Gri deschis pentru a nu distrage atenția
+
+            // Centrare Instructiuni (aproape de marginea de jos, y=680)
+            sf::FloatRect hintRect = hintText.getLocalBounds();
+            hintText.setOrigin(hintRect.left + hintRect.width / 2.0f, hintRect.top + hintRect.height / 2.0f);
+            hintText.setPosition(300.f, 680.f);
+
+            // Desenam ambele texte
+            m_window.draw(resultText);
+            m_window.draw(hintText);
+        }
     }
 
     m_window.display();

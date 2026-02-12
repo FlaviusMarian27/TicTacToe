@@ -28,8 +28,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64e37edf-2ea6-45dc-aad2-229aa5217e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Core/GameEngine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Core/GameEngine.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameEngine.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +128,7 @@
       <workItem from="1770730851745" duration="11929000" />
       <workItem from="1770805304526" duration="6963000" />
       <workItem from="1770822887911" duration="6409000" />
-      <workItem from="1770894810709" duration="6609000" />
+      <workItem from="1770894810709" duration="8893000" />
     </task>
     <servers />
   </component>
