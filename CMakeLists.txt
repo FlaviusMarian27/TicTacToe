@@ -31,7 +31,9 @@ add_executable(TicTacToe ${SOURCES}
         include/Players/HardBot.hpp
         src/Players/HardBot.cpp
         include/Players/MediumBot.hpp
-        src/Players/MediumBot.cpp)
+        src/Players/MediumBot.cpp
+        include/Graphics/MenuButton.hpp
+        src/Graphics/MenuButton.cpp)
 
 # Linkuim bibliotecile SFML
 target_link_libraries(TicTacToe sfml-graphics sfml-window sfml-system sfml-network)
