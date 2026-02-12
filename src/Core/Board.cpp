@@ -79,3 +79,15 @@ void Board::setCell(int row, int column, Cell piece){
         m_grid[row][column] = piece;
     }
 }
+
+bool Board::isWinningMove(int row, int col, Cell piece){
+    if (m_grid[row][col] != Cell::Empty){
+        return false;
+    }
+
+    m_grid[row][col] = piece;
+    bool wins = (checkWinner() == piece);
+    m_grid[row][col] = Cell::Empty;
+
+    return wins;
+}

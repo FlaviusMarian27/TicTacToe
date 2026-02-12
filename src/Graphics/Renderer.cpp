@@ -1,4 +1,5 @@
 #include "Graphics/Renderer.hpp"
+#include "Core/Constants.hpp"
 #include <iostream>
 
 using namespace std;
@@ -6,8 +7,10 @@ using namespace std;
 Renderer::Renderer(sf::RenderWindow& window) : m_window(window){}
 
 void Renderer::drawGrid(){
-    sf::RectangleShape line(sf::Vector2f(WINDOW_SIZE,5.f));
-    line.setFillColor(sf::Color::White);
+    m_window.clear(BG_COLOR);
+
+    sf::RectangleShape line(sf::Vector2f(WINDOW_SIZE,8.f)); //grosime linii
+    line.setFillColor(GRID_COLOR);
 
     //liniile orizontale
     line.setPosition(0,CELL_SIZE);
@@ -31,9 +34,10 @@ void Renderer::drawMarkers(const Board& board){
             float yPos = row * 200 + 100;
 
             if (state == Cell::X){
-                sf::RectangleShape line1(sf::Vector2f(150.f,5.f));
-                line1.setOrigin(sf::Vector2f(75.f,2.5f));
-                line1.setPosition(xPos,yPos);
+                sf::RectangleShape line1(sf::Vector2f(CELL_SIZE * 0.7f, 10.f));
+                line1.setFillColor(X_COLOR); // culoare galbena
+                line1.setOrigin(line1.getSize().x / 2, line1.getSize().y / 2);
+                line1.setPosition(xPos, yPos);
                 line1.setRotation(45);
                 m_window.draw(line1);
 
@@ -41,12 +45,12 @@ void Renderer::drawMarkers(const Board& board){
                 line2.setRotation(-45);
                 m_window.draw(line2);
             }else if (state == Cell::O){
-                sf::CircleShape circle(70.f);
-                circle.setOrigin(70.f,70.f);
-                circle.setPosition(xPos,yPos);
+                sf::CircleShape circle(CELL_SIZE * 0.35f);
+                circle.setOrigin(circle.getRadius(), circle.getRadius());
+                circle.setPosition(xPos, yPos);
                 circle.setFillColor(sf::Color::Transparent);
-                circle.setOutlineThickness(5.f);
-                circle.setOutlineColor(sf::Color::Red);
+                circle.setOutlineThickness(10.f); // O mai gros
+                circle.setOutlineColor(O_COLOR); // culoare portocalie
                 m_window.draw(circle);
             }
         }

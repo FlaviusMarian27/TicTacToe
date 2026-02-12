@@ -14,4 +14,7 @@ public:
     bool isFull() const;
     Cell getCell(int row, int column) const;
     void setCell(int row, int column, Cell cell);
+
+    //metoda pentru a verifica ar duce la victoria playerului
+    bool isWinningMove(int row, int col, Cell piece);
 };
