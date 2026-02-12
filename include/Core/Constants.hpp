@@ -13,6 +13,12 @@ enum class Cell{
     O
 };
 
+enum class GameState {
+    Menu,
+    Playing,
+    GameOver
+};
+
 //dimensiunea pentru interfata
 const int WINDOW_SIZE = 600;
 const int CELL_SIZE = WINDOW_SIZE / 3;
