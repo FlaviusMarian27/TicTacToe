@@ -85,5 +85,16 @@ The game is designed to be "Plug & Play" on most Linux distributions:
 *   ***Audio Update:*** Adding retro-futuristic sound effects and a synthwave background soundtrack.
 
 ---
+### 📸 Visual Showcase
+
+Here is a glimpse of the **Neon Aesthetic** and the different game modes:
+
+<p align="center">
+  <img src="screenshot/img1.png" width="30%" />
+  <img src="screenshot/img2.png" width="30%" /> 
+  <img src="screenshot/img3.png" width="30%" />
+</p>
+
+---
 ### 👨‍💻 Author
 Flavius - Lead Developer - [GitHub Profile](https://github.com/FlaviusMarian27)
