@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TicTacToe Dev
+Comment=Versiunea de lucru a jocului
+Exec=/home/flavius/Documents/TicTacToe/StartGame.sh
+Icon=/home/flavius/Documents/TicTacToe/assets/icon.png
+Terminal=false
+Path=/home/flavius/Documents/TicTacToe/
+Categories=Game;
+
